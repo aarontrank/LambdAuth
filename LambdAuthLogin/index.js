@@ -44,7 +44,8 @@ function getUser(email, fn) {
 				var hash = data.Item.passwordHash.S;
 				var salt = data.Item.passwordSalt.S;
 				var verified = data.Item.verified.BOOL;
-				fn(null, hash, salt, verified);
+				var admin = (data.Item.admin) ? data.Item.admin.BOOL : false;
+				fn(null, hash, salt, verified, admin);
 			} else {
 				fn(null, null); // User not found
 			}
@@ -69,7 +70,7 @@ exports.handler = function(event, context) {
 	var email = event.email;
 	var clearPassword = event.password;
 
-	getUser(email, function(err, correctHash, salt, verified) {
+	getUser(email, function(err, correctHash, salt, verified, admin) {
 		if (err) {
 			context.fail('Error in getUser: ' + err);
 		} else {
@@ -102,7 +103,8 @@ exports.handler = function(event, context) {
 									context.succeed({
 										login: true,
 										identityId: identityId,
-										token: token
+										token: token,
+										admin: admin
 									});
 								}
 							});

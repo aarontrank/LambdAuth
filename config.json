@@ -1,15 +1,16 @@
 {
-  "AWS_ACCOUNT_ID": "123412341234",
+  "AWS_ACCOUNT_ID": "784919166999",
   "CLI_PROFILE": "default",
-  "REGION": "eu-west-1",
-  "BUCKET": "bucket",
+  "REGION": "us-east-1",
+  "BUCKET": "www-dialasermon",
   "MAX_AGE": "10",
   "CRYPTO_BYTE_SIZE": 128,
   "DDB_TABLE": "LambdAuthUsers",
   "IDENTITY_POOL_NAME": "LambdAuth",
-  "DEVELOPER_PROVIDER_NAME": "login.mycompany.myapp",
+  "DEVELOPER_PROVIDER_NAME": "login.appdog.dialasermon",
   "EXTERNAL_NAME": "My Authentication",
-  "EMAIL_SOURCE": "email@example.com",
-  "VERIFICATION_PAGE": "http://bucket.s3.amazonaws.com/verify.html",
-  "RESET_PAGE": "http://bucket.s3.amazonaws.com/reset.html"
+  "EMAIL_SOURCE": "aaron@appdog.io",
+  "VERIFICATION_PAGE": "http://www-dialasermon.s3.amazonaws.com/verify.html",
+  "RESET_PAGE": "http://www-dialasermon.s3.amazonaws.com/reset.html",
+  "IDENTITY_POOL_ID": "us-east-1:b6ab8bdb-2f31-4b51-bf94-7ad3a9633178"
 }

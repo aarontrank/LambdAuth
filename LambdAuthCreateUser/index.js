@@ -53,7 +53,10 @@ function storeUser(email, password, salt, fn) {
 				},
 				verifyToken: {
 					S: token
-				}
+				},
+				admin: {
+					BOOL: false
+				},
 			},
 			ConditionExpression: 'attribute_not_exists (email)'
 		}, function(err, data) {
