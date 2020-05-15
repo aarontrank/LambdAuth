@@ -20,6 +20,7 @@
                 "arn:aws:lambda:<REGION>:<AWS_ACCOUNT_ID>:function:LambdAuthCreateUser",
                 "arn:aws:lambda:<REGION>:<AWS_ACCOUNT_ID>:function:LambdAuthVerifyUser",
                 "arn:aws:lambda:<REGION>:<AWS_ACCOUNT_ID>:function:LambdAuthChangePassword",
+                "arn:aws:lambda:<REGION>:<AWS_ACCOUNT_ID>:function:LambdAuthFetchDialASermon",
                 "arn:aws:lambda:<REGION>:<AWS_ACCOUNT_ID>:function:LambdAuthLostUser",
                 "arn:aws:lambda:<REGION>:<AWS_ACCOUNT_ID>:function:LambdAuthLostPassword",
                 "arn:aws:lambda:<REGION>:<AWS_ACCOUNT_ID>:function:LambdAuthResetPassword",
